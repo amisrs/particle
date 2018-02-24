@@ -1,29 +1,47 @@
 <div class="container">
   <div class="user-details">
-    <h3> Featured Projects </h3>
+    <h3>  </h3>
   </div>
   <div class="row user-projects">
     <div class="six columns images">
-      <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+      <img alt="coursematch" src="{{ "/assets/img/AYEW191.png" | prepend: site.baseurl }}" />
     </div>
     <div class="six columns">
-      <h5> Project Title </h5>
-      <li> Featured Skills</li>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="project-link" href="#">Check it out</a>
+      <h5> Course Match </h5>
+      <ul>
+        <li>Python, React, machine learning</li>
+      </ul>
+      <p>A prototype web application to compare course outlines between universities. I used a support vector machine with sklearn to classify sentences in course outlines. On similarly classified sentences, I ran the <a href="https://github.com/csurfer/rake-nltk">RAKE algorithm</a> to extract keywords, and then used cosine distance between vectorised keywords to determine the similarity.</p>
+      <a class="project-link" href="https://exchange-course-match.herokuapp.com/">Demo Site</a> 
     </div>
   </div>
+  <br />
   <div class="row user-projects">
     <div class="six columns">
-      <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+      <img alt="pokedex" src="{{ "/assets/img/nidokin.jpg" | prepend: site.baseurl }}" />
     </div>
     <div class="six columns">
-      <h5> Project Title </h5>
+      <h5> Android Apps </h5>
       <ul>
-        <li> Featured Skills</li>
+        <li> Java, SQLite </li>
       </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="project-link" href="#">Check it out</a>
+      <p>I've built a bunch of android apps; you can find the source code on my Github. Currently I'm working on a Spotify BPM matcher, where the user taps a tempo and it'll pull a song of that tempo from Spotify and play it. Eventually I'll do some DSP magic and make it cooler.</p>
+      <a class="project-link" href="https://github.com/amisrs/StratDex">Example</a>
     </div>
   </div>
+  <br />
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="bot" src="{{ "/assets/img/bot.png" | prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns">
+      <h5> Bots </h5>
+      <ul>
+        <li>Python, NodeJS</li>
+      </ul>
+      <p>I write bots that do random things for fun. I've written a multiplayer blackjack bot, and a music player bot for Discord. There are some annoying ones like a bot that analyses the parts of speech in your text and (usually nonsensically) makes fun of what you said.</p>
+      <a class="project-link" href="https://github.com/amisrs/paraparrot/blob/master/paraparrot.py">Source Code</a> 
+    </div>
+  </div>
+
 </div>
